@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BASIC DAY 1 TASK</title>
+    <style>
+        body {
+            background-color: palevioletred;
+        }
+
+        #a {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(143, 138, 138, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40px;
+            width: 80%;
+            border-radius: 20px;
+            font-size: 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+        }
+
+        @media screen and (max-width: 1000px) {
+            #a {
+                max-width: 90%;
+                margin-top: 50px;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            button {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            #a {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="number"],
+            input[type="date"] {
+                padding: 8px;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media screen and (max-width: 200px) {
+            button {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 100px) {
+            button {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <h1>PERSONAL INFORMATION</h1>
+        <form>
+            <label><b>FIRST NAME:</b></label>
+            <input type="text" id="first-name">
+
+            <label><b>LAST NAME:</b></label>
+            <input type="text" id="last-name">
+
+            <label><b>NICK NAME:</b></label>
+            <input type="text" id="nick-name">
+
+            <label><b>E-MAIL:</b></label>
+            <input type="email" id="email">
+
+            <label><b>PASSWORD:</b></label>
+            <input type="password" id="password">
+
+            <label><b>DATE OF BIRTH:</b></label>
+            <input type="date" id="dob">
+
+            <label><b>GENDER:</b></label>
+            <input type="radio" id="male" name="gender"><label for="male"><b>male</b></label>
+            <input type="radio" id="female" name="gender"><label for="female"><b>female</b></label><br><br>
+
+            <label><b>PHONE NUMBER:</b></label>
+            <input type="number" id="phone">
+
+            <label><b>CITY:</b></label>
+            <input type="text" id="city">
+
+            <label><b>ADDRESS:</b></label>
+            <input type="text" id="address">
+
+            <button type="submit">Submit</button>
+        </form>
+        <a href="index.html">Not have an account? Login</a>
+    </div>
+</body>
+</html>
